@@ -19,6 +19,27 @@ public class variable {
         System.out.println(gg);
         System.out.println(hh);
 
+        long qq = 2L;
+        System.out.println(qq);
+
+        //char    本质是一个字符，输出unicode中对应的字符            unicode是ASCII的拓展
+        char w = 'a';
+        char w1 = '马';           //print the result reflected in unicode
+        char ww = 39532;
+        char w2 = '\n';
+        char w3 = 99;
+        System.out.println(w);
+        System.out.println(w1);
+        System.out.println(ww);
+        System.out.println(w2);
+        System.out.println(w3);       //print the char which reflected in ASCII
+
+        //char can be calculated
+        char n = 'a'+1;
+        System.out.println(n);
+
+
+        //type transformation
 
     }
 }
