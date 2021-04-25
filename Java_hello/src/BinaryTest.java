@@ -43,13 +43,15 @@ public class BinaryTest {
 
 
         //BinaryTest              位移运算
-        int a = 1 >> 2;            //右移
+        int a = 1 >> 2;            //算术右移，低位溢出，高位补符号位
         int b = -1 >> 2;
-        int c = 1 << 2;             //左移
+        int c = 1 << 2;             //算术左移，低位补0，符号位不变
         int d = -1 << 2;
-        int e = -1 >>> 2;           //算术右移
-
-
+        int e = -1 >>> 2;           //无符号右移,低位溢出，高位补0
+        int f = 1&8;     //按位运算，都为1才为1
+        int g = 1|8;     //按位运算，都为0才为0
+        int h = 1^8;     //按位运算，不同才为1
+        int i = ~3;     //按位运算，取反
         System.out.println(a);
         System.out.println(b);
         System.out.println(c);
