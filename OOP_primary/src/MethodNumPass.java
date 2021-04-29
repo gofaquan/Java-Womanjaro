@@ -2,30 +2,30 @@ public class MethodNumPass {
     public static void main(String[] args) {
         //in method we change a value in value type, it wont be change,
         // but in quote type it would be change
-        valueTest testValue = new valueTest();
+        valueTest valueTest = new valueTest();
 
 
         // value type, doesnt change
         int a =0;
-        testValue.test(a);
+        valueTest.test(a);
         System.out.println(a);       //0
 
 
         //quote type ,   changed
         int[] arr = {1,2,3};
-        testValue.arrayTest(arr);
+        valueTest.arrayTest(arr);
         System.out.println(arr[0]);   //515
 
 
         //same value
         person p = new person();
         p.name = " maewiq";
-        person pp = testValue.hh(p);
+        person pp = valueTest.hh(p);
         pp.name = " qimawie";
         System.out.println(p.name);
 
         //different value
-        person ppp = testValue.qq(p);
+        person ppp = valueTest.qq(p);
         ppp.name = "woyaoqianmq";
         System.out.println(p.name);
         System.out.println(ppp.name);
