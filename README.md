@@ -1,10 +1,13 @@
 # Java-Womanjaro
- 
-# This repository is used to learn java in Manjaro by guofaquan
 
+# This repository is used to learn java in Manjaro by guofaquan
 
 ## Knowledge
 
+#### 只能在构造器中访问另一个构造器且this语句必须放在第一条
+
+#### 构造器未被定义时有默认的，被显示定义后若还要调用默认的则需要在显式定义下该默认构造器  `Dog(){}`
+全局变量可以加修饰符，局部变量不能加修饰符
 #### 原码，反码和补码,拿到数后，计算机先把原码转反码再转补码，运算后转反码再转原码显示
 ````
 1. 二进制的最高位是符号位：0表示正数，1表示负数
@@ -85,6 +88,8 @@ initialize v.初始化
 
 ````
 `convert v.转变，转换，转化; 可转变为; 可变换成`
+
+
 
 
 
