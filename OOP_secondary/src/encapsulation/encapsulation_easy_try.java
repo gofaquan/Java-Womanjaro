@@ -2,45 +2,24 @@ package encapsulation;
 
 public class encapsulation_easy_try {
     public static void main(String[] args) {
-        Person person = new Person();
-        person.setAge(133);
-        person.setSalary(99999);
-        person.setName("uzi");
+        Account qwm = new Account("22222", "123456", 9);
 
-
-        System.out.println(person.getAge());
-        System.out.println(person.getSalary());
-        System.out.println(person.getName());
-
+        System.out.println(qwm.getName());
+        System.out.println(qwm.getMoney());
+        System.out.println(qwm.getPassword());
     }
 }
 
-class Person {
-    public String name;
-    private int age;
-    private double salary;
 
-    public int getAge() {
-        return age;
-    }
+class Account {
+  private   String name;
+  private   String password;
+  private   double money;
 
-    public void setAge(int age) {
-        if (age <= 0 || age >= 120) {
-            System.out.println("your age is fake! now give it default value 18^^");
-            this.age = 18;
-        } else {
-            this.age = age;
-        }
-    }
-
-    public double getSalary() {
-        //in further learning we'll give it some roles to get the salary, cuz it's important!
-        //now we temporary set it in public to access^^
-        return salary;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
+    public Account(String name, String password, double money) {
+        setName(name);
+        setPassword(password);
+        setMoney(money);
     }
 
     public String getName() {
@@ -48,10 +27,30 @@ class Person {
     }
 
     public void setName(String name) {
-        if(name.length() >= 8 || name.length() <= 2){
-            System.out.println("your name is too long or short,please print a name form 2~8 chars^^");
-        }else {
+        if (name.length()<=4 && name.length()>=2){
             this.name = name;
+        }else {
+            System.out.println("you're fake name!");
         }
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        if(password.length()==6){
+            this.password = password;
+        } else {
+            System.out.println("the password must be 6 chars");
+        }
+    }
+
+    public double getMoney() {
+        return money;
+    }
+
+    public void setMoney(double money) {
+        this.money = money;
     }
 }

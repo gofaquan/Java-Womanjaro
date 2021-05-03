@@ -6,7 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/Java_hello/Java_hello.iml" filepath="$PROJECT_DIR$/Java_hello/Java_hello.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOP_primary/OOP_primary.iml" filepath="$PROJECT_DIR$/OOP_primary/OOP_primary.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOP_secondary/OOP_secondary.iml" filepath="$PROJECT_DIR$/OOP_secondary/OOP_secondary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/usefulPuzzle/famousSolution.iml" filepath="$PROJECT_DIR$/usefulPuzzle/famousSolution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/usefulPuzzle/usefulPuzzle.iml" filepath="$PROJECT_DIR$/usefulPuzzle/usefulPuzzle.iml" />
     </modules>
   </component>
 </project>
