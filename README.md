@@ -4,11 +4,32 @@
 
 ## Knowledge
 
+`Arrays.sort(数组)` 从小到大排序
 
+###### 断点调试
+
+```` apl
+F7（跳入）  F8（跳出） shift+F8（跳出）  F9（执行到下一个断点）
+
+`toString()`方法小结
+
+​````apl
+基本介绍： 
+默认返回：全类名+@+哈希值的十六进制
+而子类常常重写toString方法，用于返回对象的属性信息（ALT+INS  ==> toString()）
+
+重写toString方法，打印或者拼接对象时，都会自动调用该对象的toString形式
+
+直接输出一个对象时，toString 方法会被默认调用
+
+
+​````java
+System.out.println(monster.toString()) //与下面一样
+System.out.println(monster)
 
 `hashCode`方法小结
 
-```` apl
+​```` apl
 提高具有哈希结构的容器效率
 两个引用，如果指向的是不同对象，则哈希值肯定是一样的！
 两个引用，如果指向的是不同对象，则哈希值是不一样的！
